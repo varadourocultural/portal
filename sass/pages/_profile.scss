@@ -1,0 +1,64 @@
+.-profile {
+    h1 {
+        font-family: $font-family-bebas;
+        color: $color-white;
+        font-size: u(42);
+        line-height: u(42);
+        margin: u(0 0 22 0);
+        display: inline-block;
+    }
+}
+
+.contact.-profile {
+    h1 { display: block; }
+}
+
+    .user-profile {
+        @include clearfix();
+        margin-bottom: u(30);
+
+        img {
+            width: u(229);
+            height: u(217);
+            float: left;
+        }
+
+        figcaption {
+            width: u(799);
+            height: u(217);
+            padding: u(40 0 0 60);
+            float: left;
+            font-family: $font-family-bebas;
+            font-size: u(108);
+            line-height: u(90);
+            font-weight: 400;
+            color: $color-orange;
+        }
+
+        .contact & { margin-bottom: 0; }
+    }
+
+    .print-agenda {
+        color: $color-white;
+        font-size: u(11);
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: $font-family-gotham-medium;
+        display: block;
+        float: right;
+        width: u(200);
+        text-decoration: none;
+        padding: u(6 56 0 0);
+        position: relative;
+        text-align: right;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include sprite($sprite, icon-pdf-print, true);
+            background-image: $sprite;
+        }
+    }

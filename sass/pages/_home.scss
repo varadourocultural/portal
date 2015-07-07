@@ -1,0 +1,194 @@
+.home {
+    .side-heading {
+        background: $color-red;
+    }
+}
+
+.short-event.-home-featured {
+
+    a:hover {
+        color: $color-red;
+    }
+
+    .meta-info-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &:after {
+            position: absolute;
+            right: u(14);
+            bottom: u(14);
+            display: block;
+            float: right;
+            background-image: $sprite;
+            content: '';
+        }
+    }
+
+    &.-sidebar {
+        height: u(507);
+
+        a {
+            background-position: center 142px;
+        }
+
+        .meta-info-container {
+            &:after {
+                @include sprite($sprite, arrow-red-down, true);
+            }
+        }
+    }
+
+    &.-left {
+        height: u(594);
+
+        a {
+            background-position: center bottom;
+        }
+
+        .meta-info-container {
+            top: initial;
+            right: 0;
+            bottom: 0;
+            left: initial;
+            width: u(366);
+
+            &:after {
+                @include sprite($sprite, arrow-red-up, true);
+            }
+        }
+    }
+
+    &.-right {
+        height: u(485);
+
+        a {
+            background-position: center bottom;
+        }
+
+        .meta-info-container {
+            right: 0;
+            left: initial;
+            width: u(352);
+
+            &:after {
+                @include sprite($sprite, arrow-red-down, true);
+            }
+        }
+    }
+}
+
+.agenda-links {
+    @include clearfix();
+}
+
+    .agenda-link {
+        @include transition(all .5s);
+        display: block;
+        float: left;
+        height: u(109);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &.-home {
+            padding: u(22 12);
+            width: u(352);
+            background: $color-orange;
+            color: $color-gray-dark;
+
+            font-size: u(20.16);
+            font-family: $font-family-gotham-bold;
+            line-height: u(19.3);
+
+            &:hover {
+                background: lighten($color-orange, 10%);
+            }
+
+            small {
+                display: inline-block;
+                margin-top: u(8);
+                padding-top: u(6);
+                border-top: 4px solid $color-gray-dark;
+                color: $color-white;
+                font-size: u(14.04);
+            }
+        }
+
+        &.-login {
+            padding: u(85 0 0 9);
+            width: u(162);
+            color: $color-white;
+
+            font-size: u(10);
+            font-family: $font-family-gotham-medium;
+
+            &:hover {
+                color: $color-red;
+            }
+
+            &:after {
+                @include sprite($sprite, arrow-red-right, true);
+                display: block;
+                float: right;
+                background-image: $sprite;
+                content: '';
+            }
+
+        }
+    }
+
+.home-news {
+    header {
+        @include clearfix();
+        margin: 0 auto;
+        padding: u(0 14);
+        width: u($grid-width);
+        text-transform: uppercase;
+
+        h2 {
+            float: left;
+            margin: 0;
+            width: u(148);
+            height: u(109);
+            background: $color-blue-gray;
+            color: $color-white;
+            text-align: center;
+            font-weight: normal;
+            font-size: u(42.28);
+            font-family: $font-family-bebas;
+            line-height: u(125);
+        }
+
+        a {
+            @include transition(all .5s);
+            display: block;
+            float: right;
+            margin: u(84 4 0 0);
+            width: u(150);
+            color: $color-white;
+            text-decoration: none;
+
+            font-size: u(10);
+            font-family: $font-family-gotham-medium;
+
+            &:hover {
+                color: $color-blue-gray;
+            }
+
+            &:after {
+                @include sprite($sprite, arrow-blue-right, true);
+                display: block;
+                float: right;
+                background-image: $sprite;
+                content: '';
+            }
+        }
+    }
+
+    .news-single {
+        a:hover .news-title {
+            color: $color-blue-gray;
+        }
+    }
+}

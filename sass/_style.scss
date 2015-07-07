@@ -1,0 +1,60 @@
+@import 'vendor/normalize';
+@import 'vendor/h5bp/base';
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/map';
+@import 'components/sidebar';
+@import 'components/news';
+@import 'components/locations';
+@import 'components/events';
+
+@import 'vendor/prettyCheckable';
+@import 'vendor/pikaday';
+@import 'vendor/swiper';
+
+@import 'pages/general';
+@import 'pages/home';
+@import 'pages/agents';
+@import 'pages/spaces';
+@import 'pages/search';
+@import 'pages/contact';
+@import 'pages/whatweare';
+@import 'pages/news';
+@import 'pages/event';
+@import 'pages/events';
+@import 'pages/profile';
+@import 'pages/projects';
+
+body {
+    background: url(/img/bg-body.jpg) left top repeat;
+    font-family: $font-family-gotham-book;
+    font-weight: normal;
+}
+
+figure {
+    margin: 0;
+}
+
+.cc-logo {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+    display: block;
+    text-decoration: none;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@import 'vendor/h5bp/helpers';

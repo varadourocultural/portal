@@ -1,0 +1,42 @@
+{
+  "name": "bebop",
+  "version": "0.1.8",
+  "title": "Bebop",
+  "description": "Bebop is a HTML5 and CSS3 boilerplate built on top of H5B with the aid of Compass, Grunt and Bower to kickstart and optimize the dev flow of simple websites and apps.",
+  "keywords": [
+    "html5",
+    "css3",
+    "h5b",
+    "compass",
+    "grunt",
+    "bower",
+    "boilerplate",
+    "semantic",
+    "accessibility"
+  ],
+  "author": "Arthur Gouveia <arthur.gouveia@gmail.com>",
+  "homepage": "https://github.com/arthurgouveia/bebop",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arthurgouveia/bebop.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/arthurgouveia/bebop/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-compass": "~0.8.0",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-imageoptim": "*",
+    "grunt-contrib-imagemin": "~0.7.1",
+    "load-grunt-tasks": "*",
+    "grunt-csscomb": "*"
+  }
+}

@@ -1,0 +1,65 @@
+.events {
+
+    .sidebar {
+        height: u(523);
+        margin-left: 0;
+        padding-left: 0;
+        overflow: hidden;
+    }
+
+    .side-heading {
+        color: $color-blue-gray;
+        height: auto;
+        margin: u(10 0 19);
+        padding-top: 0;
+    }
+}
+
+    .agenda-link-small {
+        display: block;
+        background: $color-blue-gray;
+        width: 100%;
+        height: u(30);
+        text-transform: uppercase;
+        font-size: u(14.69);
+        line-height: u(34);
+        color: $color-white;
+        font-family: $font-family-gotham-bold;
+        padding-left: u(8);
+        text-decoration: none;
+
+        &:after {
+            content: '';
+            display: block;
+            float: right;
+            background-image: $sprite;
+            @include sprite($sprite, arrow-white-right, true);
+            margin: u(10 15 0 0);
+        }
+    }
+
+    .datepicker {
+        height: u(250);
+        background: $color-white;
+    }
+
+    .datepicker-title {
+        display: block;
+        background: $color-white;
+        height: u(30);
+        text-transform: uppercase;
+        font-size: u(14.69);
+        line-height: u(34);
+        color: $color-blue-gray;
+        font-family: $font-family-gotham-bold;
+        padding-left: u(8);
+
+        &:after {
+            content: '';
+            display: block;
+            float: right;
+            background-image: $sprite;
+            @include sprite($sprite, arrow-blue-down, true);
+            margin: u(10 15 0 0);
+        }
+    }

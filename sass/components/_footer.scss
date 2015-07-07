@@ -1,0 +1,190 @@
+.global-footer {
+    width: u($grid-width);
+    padding: u(0 14);
+    margin: 0 auto;
+
+    @media print {
+        display: none;
+    }
+}
+
+    .sponsors-container {
+        @include clearfix();
+        background: $color-white;
+        text-align: center;
+        padding: u(22 29);
+
+        span {
+            display: block;
+            margin-bottom: u(22);
+            color: $color-gray-dark;
+
+            font-size: u(13.73);
+            font-family: $font-family-bebas;
+        }
+    }
+
+        .sponsors-featured {
+            width: u(150);
+            float: left;
+            text-align: center;
+            padding-top: u(60);
+        }
+
+        .sponsors-general {
+            width: u(610);
+            float: left;
+            margin: u(0 30);
+            text-align: center;
+        }
+
+        .sponsors-main {
+            width: u(150);
+            float: left;
+            padding-top: u(70);
+        }
+
+        .sponsors-list {
+            @include clearfix();
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            display: table;
+        }
+
+            .sponsor {
+                vertical-align: middle;
+                display: table-cell;
+                padding: u(0 10);
+                height: u(80);
+            }
+
+                .sponsor-image {
+                    @include transition(all .5s);
+                    @include transform(translatey(0));
+                    @include hide-text(left);
+                    display: inline-block;
+                    background: $sprite;
+
+                    &:hover {
+                        @include transform(translatey(-5px));
+                    }
+
+                    &.-bracket-army {
+                        @include sprite($sprite, sponsor-bracket-army, true);
+                    }
+
+                    &.-imaginaria {
+                        @include sprite($sprite, sponsor-imaginaria, true);
+                    }
+
+                    &.-coletivo {
+                        @include sprite($sprite, sponsor-coletivo, true);
+                    }
+
+                    &.-parahybolica {
+                        @include sprite($sprite, sponsor-parahybolica, true);
+                    }
+
+                    &.-balaio {
+                        @include sprite($sprite, sponsor-balaio, true);
+                    }
+
+                    &.-atelie {
+                        @include sprite($sprite, sponsor-atelie, true);
+                    }
+
+                    &.-casa-cultura {
+                        @include sprite($sprite, sponsor-casa-cultura, true);
+                    }
+
+                    &.-mutuca {
+                        @include sprite($sprite, sponsor-mutuca, true);
+                    }
+
+                    &.-piollin {
+                        @include sprite($sprite, sponsor-piollin, true);
+                    }
+
+                    &.-philipeia {
+                        @include sprite($sprite, sponsor-philipeia, true);
+                    }
+
+                    &.-pogo {
+                        @include sprite($sprite, sponsor-pogo, true);
+                    }
+
+                    &.-sebo {
+                        @include sprite($sprite, sponsor-sebo, true);
+                    }
+
+                    &.-musica-urbana {
+                        @include sprite($sprite, sponsor-musica-urbana, true);
+                    }
+
+                    &.-fabio {
+                        @include sprite($sprite, sponsor-fabio, true);
+                    }
+
+                    &.-villa-porto {
+                        @include sprite($sprite, sponsor-villa-porto, true);
+                    }
+
+                    &.-mardito {
+                        @include sprite($sprite, sponsor-mardito, true);
+                    }
+
+                    &.-tribo-ethnos {
+                        @include sprite($sprite, sponsor-tribo-ethnos, true);
+                    }
+
+                    &.-cosmopopeia {
+                        @include sprite($sprite, sponsor-cosmopopeia, true);
+                    }
+
+                    &.-anjo-azul {
+                        @include sprite($sprite, sponsor-anjo-azul, true);
+                    }
+
+                    &.-paralelo {
+                        @include sprite($sprite, sponsor-paralelo, true);
+                    }
+
+                    &.-boca {
+                        @include sprite($sprite, sponsor-boca, true);
+                    }
+
+                    &.-asbep {
+                        @include sprite($sprite, sponsor-asbep, true);
+                    }
+
+                    &.-varadouro {
+                        @include sprite($sprite, sponsor-varadouro, true);
+                    }
+
+                }
+
+    .featured-sponsors-note {
+        display: block;
+        height: u(54);
+        color: $color-gray-light;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        font-size: u(10);
+        font-family: $font-family-bebas;
+        line-height: u(54);
+
+        a {
+            @include transition(all .5s);
+            color: $color-gray-light;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-white;
+                text-decoration: underline;
+            }
+        }
+    }

@@ -1,0 +1,160 @@
+.event {
+
+    .event-description {
+        background: $color-white;
+        height: 100%;
+        margin-bottom: u(20);
+    }
+
+    .sidebar {
+        padding: u(0 0 0 14);
+        height: u(1200);
+
+        .events-map {
+            height: u(337);
+        }
+
+        .location-meta {
+            position: static;
+            width: auto;
+        }
+    }
+
+    .location-heading {
+
+        h1 {
+            background: $color-red;
+        }
+
+    }
+
+    .side-heading {
+        color: $color-red;
+
+        &.-inline {
+            height: auto;
+        }
+    }
+
+    .single-pagination {
+        a {
+            &:hover {
+                color: $color-red;
+            }
+            &.previous {
+                &:before {
+                    @include sprite($sprite, arrow-red-left, true);
+                }
+            }
+            &.disabled {
+                font-size: 0;
+                line-height: 0;
+                text-indent: -9999px;
+                background-image: none;
+            }
+
+            &.next {
+                &:after {
+                    @include sprite($sprite, arrow-red-right, true);
+                }
+            }
+        }
+    }
+
+    .location-listing {
+        h3 {
+            color: $color-red;
+        }
+    }
+
+    .addthis_toolbox {
+        margin: u(20 0);
+    }
+
+}
+
+    .event-flyer-container { display: table; }
+    .event-flyer-sub-container {
+        display: table-cell;
+        vertical-align: middle;
+        background: #2F2F2F;
+    }
+
+    .event-flyer {
+        overflow: hidden;
+        display: block;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .event-title {
+        color: #FFF;
+        font-family: $font-family-gotham-bold;
+        font-weight: normal;
+
+
+        h1 {
+            font-size: u(45);
+            line-height: u(65);
+            border-bottom: 4px solid #fff;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: u(20);
+            line-height: u(30);
+            padding: u(15 0);
+            margin: 0;
+        }
+    }
+
+    .events-map {
+        height: u(400);
+        width: u(337);
+        background: $color-white;
+    }
+
+    .add-to-agenda {
+        display: block;
+        color: $color-white;
+        font-family: $font-family-gotham-bold;
+        font-weight: normal;
+        font-size: u(15);
+        margin: u(15 0);
+        text-decoration: none;
+        line-height: u(17);
+        height: u(31);
+        text-transform: uppercase;
+
+        &:before {
+            @include sprite($sprite, icon-star, true);
+            content: '';
+            display: block;
+            float: left;
+            background-image: $sprite;
+            margin-right: u(14);
+        }
+    }
+
+    .event-datetime-price {
+        width: 346px;
+        color: #FFF;
+        font-family: $font-family-gotham-bold;
+        font-weight: normal;
+        font-size: u(18);
+        line-height: u(24);
+        text-transform: uppercase;
+        text-align: center;
+        border-collapse: separate;
+        border-spacing: 4px;
+        margin-left: -4px;
+
+        td {
+            background: $color-red;
+            vertical-align: middle;
+            padding: u(20 0);
+        }
+    }

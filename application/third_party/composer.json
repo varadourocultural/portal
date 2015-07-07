@@ -1,0 +1,6 @@
+{
+    "require": {
+        "elasticsearch/elasticsearch": "~1.0",
+        "tecnick.com/tcpdf": "~6.2"
+    }
+}

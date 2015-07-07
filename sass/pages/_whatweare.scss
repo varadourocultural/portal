@@ -1,0 +1,56 @@
+.whatweare {
+    margin-bottom: u(30);
+
+    .sidebar {
+        padding: 0;
+        height: u(587);
+        margin-left: u(-14);
+        background-color: $color-white;
+
+        p {
+            font-size: u(11);
+            line-height: u(14);
+            padding: u(0 23);
+        }
+    }
+
+        .side-heading {
+            background-color: $color-blue-gray;
+            margin-bottom: u(34);
+            padding-left: u(22);
+        }
+
+}
+
+.actions {
+    font-size: u(11);
+    line-height: u(14);
+
+    h2 {
+        display: inline-block;
+        height: 70px;
+        background-color: $color-orange;
+        font-family: $font-family-bebas;
+        font-size: u(42.28);
+        line-height: u(82);
+        color: $color-white;
+        padding: u(0 21);
+        margin: u(41 0 0);
+    }
+
+    h3 {
+        font-family: $font-family-bebas;
+        font-size: u(24);
+        line-height: u(28);
+        margin: u(34 0 10);
+    }
+
+    .row {
+        margin: 0;
+        background: $color-white;
+    }
+
+        .grid-4 {
+            padding: u(0 21);
+        }
+}
