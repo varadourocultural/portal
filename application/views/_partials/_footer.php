@@ -97,7 +97,7 @@
 
         </footer>
 
-        <a href="http://github.com/varadouro/portal" class="cc-logo" title="Acesso ao código fonte">
+        <a href="https://github.com/varadourocultural/portal" class="cc-logo" title="Acesso ao código fonte">
             <img src="<?php echo base_url('/img/cc-logo.png'); ?>" width="50" height="50" alt="Logo Creative Commons">
         </a>
 
