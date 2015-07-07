@@ -127,5 +127,3 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
-        <script src="//localhost:35729/livereload.js"></script>
