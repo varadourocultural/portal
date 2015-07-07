@@ -1,0 +1,41 @@
+a {
+    color: $color-blue-gray;
+}
+
+p {
+    font-size: u(11);
+    line-height: u(14);
+    margin: u(0 0 20);
+}
+
+.load-more {
+    @include transition(all .5s);
+    display: block;
+    margin-bottom: u(30);
+    height: u(44);
+    color: $color-gray-dark;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: u(14);
+    font-family: $font-family-gotham-bold;
+    line-height: u(46);
+
+
+    &.-red {
+        background: $color-red;
+
+        &:hover {
+            background: lighten($color-red, 10%);
+        }
+    }
+
+    &.-blue {
+        background: $color-blue-gray;
+
+        &:hover {
+            background: lighten($color-blue-gray, 10%);
+        }
+    }
+
+}

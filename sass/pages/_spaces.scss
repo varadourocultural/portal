@@ -1,0 +1,62 @@
+.space {
+
+    .space-description {
+        background: $color-white;
+        height: 100%;
+    }
+
+    .sidebar {
+        padding: u(0 0 0 14);
+        min-height: u(765);
+    }
+
+    .location-heading {
+
+        h1 {
+            background: $color-blue-gray;
+        }
+
+    }
+
+    .side-heading {
+        color: $color-blue-gray;
+    }
+
+    .single-pagination {
+        a {
+            &:hover {
+                color: $color-blue-gray;
+            }
+            &.previous {
+                &:before {
+                    @include sprite($sprite, arrow-blue-left, true);
+                }
+            }
+            &.disabled {
+                font-size: 0;
+                line-height: 0;
+                text-indent: -9999px;
+                background-image: none;
+            }
+
+            &.next {
+                &:after {
+                    @include sprite($sprite, arrow-blue-right, true);
+                }
+            }
+        }
+    }
+
+    .location-listing {
+        h3 {
+            color: $color-blue-gray;
+        }
+    }
+
+}
+
+    .spaces-map {
+        height: u(400);
+        width: u(337);
+        background: $color-white;
+    }

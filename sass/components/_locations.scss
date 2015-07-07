@@ -1,0 +1,208 @@
+.location-meta {
+    position: absolute;
+    bottom: 0;
+    left: u(14);
+    padding: u(18);
+    width: u(338);
+    background: $color-white;
+
+    span,
+    a {
+        display: block;
+    }
+
+    .location-category {
+        margin-bottom: u(26);
+        padding: u(14 0);
+        border-bottom: 4px solid $color-gray-dark;
+        font-size: u(36);
+        font-family: $font-family-bebas;
+        line-height: u(36);
+
+        i {
+            @include sprite($sprite, map-location-large, true);
+            display: block;
+            float: left;
+            margin: u(-14 16 0 1);
+            padding-top: u(11);
+            background-image: $sprite;
+            color: $color-white;
+            text-align: center;
+            font-style: normal;
+            font-size: u(12.62);
+            font-family: $font-family-gotham-bold;
+            line-height: u(12.62);
+        }
+    }
+
+    .location-title {
+        margin-bottom: u(26);
+        padding: u(14 0);
+        border-bottom: 4px solid $color-gray-dark;
+        font-size: u(36);
+        font-family: $font-family-bebas;
+        line-height: u(36);
+    }
+
+    .location-address {
+        margin-bottom: u(12);
+        font-size: u(16);
+        font-family: $font-family-gotham-bold;
+        line-height: u(18);
+    }
+
+    .location-phone {
+        color: $color-red;
+        font-size: u(14);
+        font-family: $font-family-gotham-bold;
+        line-height: u(20);
+    }
+
+    .location-email,
+    .location-url {
+        color: $color-gray-dark;
+        text-decoration: none;
+        font-size: u(14);
+        font-family: $font-family-gotham-medium;
+        line-height: u(20);
+    }
+
+    .location-times {
+        text-transform: uppercase;
+        font-size: u(11);
+        font-family: $font-family-gotham-medium;
+        line-height: u(20);
+    }
+}
+
+.location-info {
+    width: 100%;
+    background: $color-white;
+}
+
+.location-heading {
+    padding: u(0 0 25);
+
+    h1 {
+        margin: u(0 0 10);
+        padding: u(0 21);
+        height: u(71);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: u(42.03);
+        font-family: $font-family-bebas;
+        line-height: u(85);
+    }
+
+    .filters {
+        display: block;
+        margin: u(0 0 10 21);
+        text-transform: uppercase;
+        font-size: u(8);
+        font-family: $font-family-gotham-medium;
+    }
+
+    .addthis_toolbox {
+        margin: u(0 0 10 21);
+        height: u(16);
+    }
+}
+
+.location-content {
+    padding: u(0 21 18);
+}
+
+.location-related {
+    .related-title {
+        margin: u(0 auto);
+        padding: u(0 30);
+        width: u($grid-width);
+        height: u(75);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: u(42.03);
+        font-family: $font-family-bebas;
+        line-height: u(85);
+    }
+}
+
+.location-listing {
+    margin-bottom: u(30);
+    height: u(450);
+
+    a {
+        @include transition(all .5s);
+        display: block;
+        height: 100%;
+        background: $color-white;
+        color: $color-gray-dark;
+        text-decoration: none;
+        overflow: hidden;
+
+        &:hover {
+            @include filter(grayscale(1));
+        }
+    }
+
+        img {
+            width: u(325);
+            height: u(224);
+        }
+
+        figcaption {
+            position: relative;
+            padding: u(15 13);
+            height: u(226);
+
+            .location-map-icon {
+                @include sprite($sprite, map-location-listing, true);
+                position: absolute;
+                top: u(-58);
+                left: 0;
+                display: block;
+                padding: u(17 0 0 1);
+                background-color: $color-gray-dark;
+                background-image: $sprite;
+                color: $color-white;
+                text-align: center;
+                font-style: normal;
+                font-size: u(9);
+                font-family: $font-family-gotham-bold;
+                line-height: u(10.55);
+
+            }
+
+            h3 {
+                margin: u(8 0);
+                font-weight: normal;
+                font-size: u(28);
+                font-family: $font-family-gotham-bold;
+                line-height: u(30);
+            }
+
+            .meta-info {
+                display: block;
+                text-transform: uppercase;
+                font-size: u(20);
+                font-family: $font-family-bebas;
+                line-height: u(12);
+            }
+
+            p {
+                margin: u(0 0 18);
+                font-size: u(11);
+                line-height: u(14);
+            }
+
+            .filters {
+                position: absolute;
+                bottom: u(10);
+                left: u(13);
+                display: block;
+                margin: 0;
+                text-transform: uppercase;
+                font-size: u(8);
+                font-family: $font-family-gotham-medium;
+            }
+        }
+}

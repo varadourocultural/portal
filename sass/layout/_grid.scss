@@ -1,0 +1,59 @@
+.row {
+    width: u($grid-width);
+    margin: 0 auto;
+}
+
+.row {
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    .row {
+        width: auto;
+        margin: u(0 -14);
+        max-width: none;
+    }
+}
+
+.row {
+    &:after {
+        clear: both;
+    }
+}
+
+[class*="grid"] {
+    position: relative;
+    padding: u(0 14);
+    float: left;
+    min-height:1px;
+
+    &.no-padding {
+        padding: 0;
+    }
+
+    &.no-padding-left {
+        padding-left: 0;
+    }
+
+    &.no-padding-right {
+        padding-right: 0;
+    }
+}
+
+@for $i from 1 through $grid-columns {
+
+    .grid-#{$i} {
+        width: ($i * 100%)/ $grid-columns;
+    }
+
+}
+
+@for $i from 1 through $grid-columns {
+
+    .offset-grid-#{$i} {
+        margin-left: u($grid-width * ($i/$grid-columns));
+    }
+
+}

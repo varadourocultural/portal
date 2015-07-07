@@ -1,0 +1,197 @@
+.global-header {
+    height: u(193);
+
+    @media print {
+        display: none;
+    }
+}
+
+    .global-navigation {
+        padding-top: u(164);
+        height: 100%;
+        background: $color-blue-gray url(/img/bg-header.png) center top no-repeat;
+
+        .navigation-links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                &:last-child {
+                    float: right;
+                }
+            }
+
+                a {
+                    @include transition(all .5s);
+                    display: inline-block;
+                    padding: u(0 19);
+                    height: u(29);
+                    color: $color-gray-dark;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: u(9.93);
+                    font-family: $font-family-gotham-bold;
+                    line-height: u(29);
+
+                    &:hover,
+                    &.active {
+                        background: lighten($color-blue-gray, 10%);
+                    }
+                }
+        }
+    }
+
+    .user-login {
+        position: absolute;
+        top: 0;
+        right: u(14);
+        text-align: right;
+        background: #000;
+        min-width: u(285);
+
+    }
+
+    .user-div{
+        height: u(30);
+        padding: u(0 10 0 0);
+        background: $color-red;
+        span {
+            color: #000;
+            text-transform: uppercase;
+            font-size: u(13);
+            line-height: u(31);
+            font-family: $font-family-gotham-bold;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    .user-actions {
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: u(12);
+        line-height: u(21);
+        height: u(20);
+        min-width: u(285);
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin: u(0 5);
+        }
+    }
+
+
+    .side-header {
+        @include clearfix();
+        padding-left: 0;
+    }
+
+        .logo {
+            @include transition(all .5s);
+            display: block;
+            margin-bottom: u(3);
+            padding-top: u(21);
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            font-size: u(79.3);
+            font-family: $font-family-bebas;
+            line-height: u(70);
+
+            &:hover {
+                color: $color-blue-gray;
+            }
+        }
+
+        .social-links {
+            float: left;
+            margin: u(3 0 0);
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+            }
+        }
+
+                .social-link {
+                    @include transition(transform .5s);
+                    @include transform(rotate(0deg));
+                    @include hide-text(left);
+                    @include sprite($sprite, social-link-facebook, true);
+                    display: block;
+                    background-image: $sprite;
+                    text-decoration: none;
+
+                    &:hover {
+                        @include transform(rotate(360deg));
+                    }
+
+                    &.-instagram {
+                        @include sprite($sprite, social-link-instagram, false);
+                    }
+
+                    &.-twitter {
+                        @include sprite($sprite, social-link-twitter, false);
+                    }
+
+                    &.-vimeo {
+                        @include sprite($sprite, social-link-vimeo, false);
+                    }
+
+                    &.-youtube {
+                        @include sprite($sprite, social-link-youtube, false);
+                    }
+                }
+
+        .search-form {
+            @include clearfix();
+            float: right;
+            width: u(210);
+
+            &:hover,
+            &:focus {
+                .search-input,
+                .search-button {
+                    background-color: $color-gray-dark;
+                }
+            }
+        }
+
+            .search-input {
+                float: left;
+                padding: u(0 10);
+                width: u(160);
+                height: u(29);
+                outline: 0 none;
+                border: none;
+                background: transparent;
+                color: $color-white;
+                text-align: right;
+                text-transform: uppercase;
+
+                font-size: u(10.75);
+                font-family: $font-family-gotham-medium;
+                line-height: u(29);
+            }
+
+            .search-button {
+                @include sprite($sprite, icon-search, false);
+                @include hide-text(left);
+                float: left;
+                width: u(30);
+                height: u(29);
+                outline: 0 none;
+                border: none;
+                background-color: transparent;
+                background-image: $sprite;
+            }

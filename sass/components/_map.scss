@@ -1,0 +1,102 @@
+.map-container {
+
+}
+
+.map-filters-container {
+    @include transition(all .5s);
+    position: absolute;
+    top: 0;
+    right: u(14);
+    z-index: 10;
+    overflow: hidden;
+    width: u(352);
+    height: u(138);
+    background-color: $color-yellow-dark;
+
+    &.display-filters {
+        height: 100%;
+
+        .filters-area-title:after {
+            @include transform(rotate(180deg));
+        }
+    }
+}
+
+    .filter-title {
+        display: block;
+        margin: u(22 20 11);
+        height: u(76);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: u(42);
+        font-family: $font-family-bebas;
+        line-height: u(38);
+    }
+
+    .filters-area {
+        height: u(507);
+        background: $color-gray-dark;
+    }
+
+        .filters-area-title {
+            display: block;
+            padding: u(0 20);
+            height: u(29);
+            color: $color-yellow-dark;
+            text-transform: uppercase;
+
+            font-size: u(10);
+            font-family: $font-family-gotham-medium;
+            line-height: u(29);
+            cursor: pointer;
+
+            &:hover {
+                background: lighten($color-gray-dark, 5%);
+            }
+
+            &:after {
+                @include transition(all .5s);
+                @include transform(rotate(0deg));
+                @include sprite($sprite, arrow-yellow-down, true);
+                float: right;
+                margin-top: u(8);
+                background-image: $sprite;
+                content: '';
+            }
+        }
+
+    .map-filter-form {
+        height: u(468);
+        padding: u(0 20);
+        position: relative;
+        overflow: hidden;
+
+        h4 {
+            font-family: $font-family-gotham-medium;
+            font-weight: normal;
+            font-size: u(10);
+            text-transform: uppercase;
+            margin: u(10 0);
+            color: $color-white;
+        }
+
+        .prettycheckbox,
+        .prettyradio {
+            margin-left: u(-10);
+        }
+
+        .iScrollVerticalScrollbar {
+            right: u(13) !important;
+            background: $color-black;
+        }
+
+            .iScrollIndicator {
+                background-color: $color-white !important;
+                border: 0 none !important;
+            }
+    }
+
+.map {
+    height: u(616);
+    background-color: $color-blue-gray;
+}

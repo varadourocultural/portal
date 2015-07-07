@@ -1,0 +1,50 @@
+.agent {
+
+    .sidebar {
+        padding-right: 0;
+        height: u(500);
+    }
+
+    .location-heading {
+
+        h1 {
+            background: $color-red;
+        }
+
+    }
+
+    .side-heading {
+        color: $color-red;
+    }
+
+    .single-pagination {
+        a {
+            &:hover {
+                color: $color-red;
+            }
+            &.previous {
+                &:before {
+                    @include sprite($sprite, arrow-red-left, true);
+                }
+            }
+            &.disabled {
+                font-size: 0;
+                line-height: 0;
+                text-indent: -9999px;
+                background-image: none;
+            }
+
+            &.next {
+                &:after {
+                    @include sprite($sprite, arrow-red-right, true);
+                }
+            }
+        }
+    }
+
+    .location-listing {
+        h3 {
+            color: $color-red;
+        }
+    }
+}

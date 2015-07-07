@@ -1,0 +1,97 @@
+.contact {
+    margin-bottom: u(30);
+
+    .sidebar {
+        padding: 0;
+        height: u(587);
+        margin-left: u(-14);
+        background-color: $color-white;
+    }
+
+    &.-profile {
+        .sidebar { height: u(700); }
+    }
+
+        .side-heading {
+            background-color: $color-blue-gray;
+            margin-bottom: u(34);
+            padding-left: u(22);
+        }
+
+        .contact-form {
+            padding: u(0 23);
+            margin-bottom: u(40);
+
+            p {
+                margin: u(0 0 15);
+
+                &.hp {
+                    display: none;
+                }
+
+                &.feedback {
+                    font-size: u(14);
+                    margin-top: u(-15);
+
+                    &.-error {
+                        color: $color-red;
+                    }
+
+                    &.-success {
+                        color: $color-blue-gray;
+                    }
+                }
+            }
+
+            label,
+            input,
+            textarea,
+            button {
+                display: block;
+            }
+
+            label {
+                font-family: $font-family-bebas;
+                font-size: u(24);
+                line-height: u(24);
+                text-transform: uppercase;
+                color: $color-gray-dark;
+                letter-spacing: 1px;
+                margin-bottom: u(2);
+            }
+
+            input,
+            textarea {
+                border: none;
+                background-color: $color-gray-lighter;
+                width: 100%;
+                min-height: u(26);
+                line-height: u(26);
+                padding: u(0 10)
+            }
+
+            textarea {
+                height: u(150);
+            }
+
+            [type=submit] {
+                @include transition(all .5s);
+                border: none;
+                background-color: $color-blue-gray;
+                height: u(26);
+                padding: u(0 12);
+                color: $color-white;
+                font-family: $font-family-bebas;
+                font-size: u(18);
+                line-height: u(30);
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: lighten($color-blue-gray, 10%);
+                }
+            }
+        }
+
+}

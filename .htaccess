@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php/?$1 [L]
+
+<IfModule mod_xsendfile.c>
+    # melhora a performance para envio de arquivos para o browser
+    XSendFile on
+</IfModule>

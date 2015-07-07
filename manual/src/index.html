@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+
+        <title>Manual V.C.</title>
+        <meta name="description" content="This is just an example of markup with decent semantics for your personal use.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="Bebop sample index file">
+        <meta property="og:description" content="This is just an example of markup with decent semantics for your personal use.">
+        <meta property="og:site_name" content="Bebop sample page">
+        <meta property="og:image" content="http://yourwebsite.com/facebookShareImage.png">
+
+        <!--[if (gt IE 8) | (IEMobile)]><!-->
+            <link rel="stylesheet" href="/assets/css/main.css">
+        <!--<![endif]-->
+
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <link rel="stylesheet" href="/assets/css/main-ie.css">
+        <![endif]-->
+
+        <script src="/assets/js/vendor/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="header" role="banner">
+
+            <h1>Manual de Uso - Varadouro Cultural</h1>
+
+            <nav role="navigation">
+
+                <ol role="menubar">
+                    <li role="menuitem">
+                        <a href="#login" title="login" tabindex="1">Login</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aero-espacos-culturais" title="espacos-culturais" tabindex="2">Espaços Culturais: adição, edição, remoção e ordenação</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aero-agentes-culturais" title="agentes-culturais" tabindex="3">Agentes Culturais: adição, edição, remoção e ordenação</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aero-atributos" title="atributos" tabindex="3">Atributos: adição, edição, remoção e ordenação</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aero-noticias" title="noticias" tabindex="3">Notícias: adição, edição, remoção e ordenação</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aer-usuarios" title="usuarios" tabindex="3">Usuários: adição, edição e remoção</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#aer-eventos" title="eventos" tabindex="3">Eventos: adição, edição e remoção</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#niveis-usuario" title="niveis" tabindex="3">Níveis de usuário</a>
+                    </li>
+                </ol>
+
+            </nav>
+
+        </header>
+
+        <main class="main" role="main">
+
+            <section style="width: 1000px;">
+                <a name="login"></a>
+                <dl>
+                    <dt>1 - Login</dt>
+
+                    <dd>
+                        <p>Para efetuar o "login", é necessário por email e senha corretos de um usuário cadastrado do nível <a href="#usuario-nivel-2">2</a> ou <a href="#usuario-nivel-1">1</a>.</p>
+                    </dd>
+                </dl>
+
+                <a name="aero-espacos-culturais"></a>
+                <dl>
+                    <dt>2 - Espaços Culturais: adição, edição e remoção</dt>
+
+                    <dd>
+                        <p>Ao <a href="#login">logar-se</a>, o usuário pode observar um menu na parte superior da tela.</p>
+                        <img src="assets/img/menu-espacos-culturais.jpg" alt="Menu inicial" width="1000" height="318">
+                        <p>Clicando na opção "Espaços Culturais", se houver algum espaço adicionado, é mostrada uma listagem de espaços culturais logo abaixo do menu.</p>
+                        <img src="assets/img/listagem-espacos-culturais.jpg" alt="Listagem de Espaços" width="1000" height="318">
+                        <p>Lá o usuário enconta todas as possíveis opções para lidar com os espaços: <a href="#a-espacos-culturais">adição</a>, <a href="#e-espacos-culturais">edição</a>, <a href="#r-espacos-culturais">remoção</a> e mudar a <a href="#o-espacos-culturais">ordenação</a>.</p>
+
+                        <section>
+                            <dl>
+                                <a name="a-espacos-culturais"></a>
+                                <dt>2.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar um espaço cultural, o usuário deve clicar no botão "+ Espaço Cultural" que se encontra no campo direito superior da tela.</p>
+                                    <img src="assets/img/adicao-espacos-culturais.jpg" alt="Adição de espaço" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos do espaço cultural, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-espacos-culturais.jpg" alt="Formulário de adição de espaço cultural" width="1000" height="500">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Nome do espaço</li>
+                                        <li>Slug(criado automaticamente baseado no nome do espaço)</li>
+                                        <li>Natureza Jurídica</li>
+                                        <li>Tipo do espaço</li>
+                                        <li>Nome do responsável</li>
+                                        <li>Espaço físico/virtual</li>
+                                        <li>Ponto de cultura</li>
+                                        <li>Área de atuação cultural primária</li>
+                                        <li>Áreas de atuações culturai secundárias</li>
+                                        <li>Endereço</li>
+                                        <li>Cep</li>
+                                        <li>Complemento</li>
+                                        <li>Latitude e Longitude (que são definidas automáticamente ao selecionar a localização do espaço no mapa)</li>
+                                        <li>Atividades Culturais</li>
+                                        <li>Celular</li>
+                                        <li>Telefone fixo</li>
+                                        <li>Telefone comercial</li>
+                                        <li>Endereço do site</li>
+                                        <li>Email</li>
+                                        <li>Preço mínimo</li>
+                                        <li>Preço máximo</li>
+                                        <li>URL da agenda cultural</li>
+                                        <li>Formas de pagamento</li>
+                                        <li>Twitter</li>
+                                        <li>Facebook</li>
+                                        <li>Google+</li>
+                                        <li>YouTube</li>
+                                        <li>Outras redes sociais</li>
+                                        <li>Horário de funcionamento</li>
+                                        <li>Fechado no horário de almoço (entre 12:00 e 14:00)</li>
+                                        <li>Informações Adicionais</li>
+                                    </ul>
+                                    <p>Para adicionar fotos ao espaço, o usuário deve clicar na aba "Fotos" que fica acima do formulário.</p>
+                                    <img src="assets/img/fotos-adicao-espacos-culturais.jpg" alt="Adição de fotos" width="1000" height="500">
+                                    <p>Então o usuário só precisa clicar em "Adicionar" e escolher o arquivo de imagem válido(.jpg, .gif e .png) do seu computador. Não deve ser colocado arquivos com transparência nos formatos .gif e .png.</p>
+                                    <img src="assets/img/adicao-foto-espacos-culturais.jpg" alt="Escolher arquivo de imagem" width="1000" height="316">
+                                    <p>Após o correto preenchimento dos campos e das fotos(opcional), o usuário pode adicionar o espaço clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-espacos-culturais.jpg" alt="Formulário de adição de espaço cultural" width="1000" height="500">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="e-espacos-culturais"></a>
+                                <dt>2.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar um espaço cultural, o usuário deve clicar no botão "Editar" correspondente ao espaço que deseja alterar.</p>
+                                    <img src="assets/img/edicao-espacos-culturais.jpg" alt="Edição do espaço" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-espacos-culturais">adição</a> com os campos já preenchidos. O usuário deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-edicao-espacos-culturais.jpg" alt="Salvar alterações no espaço cultural" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="r-espacos-culturais"></a>
+                                <dt>2.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o usuário deseja remover um Espaço Cultural, ele deve procurar na linha do respectivo espaço, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-espacos-culturais.jpg" alt="Remover um espaço" width="1000" height="318">
+                                    <p>Caso o usuário queira remover mais de um Espaço de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar um ou mais espaços.</p>
+                                    <img src="assets/img/remocoes-espacos-culturais.jpg" alt="Remover mais de um espaço" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="o-espacos-culturais"></a>
+                                <dt>2.4 - Ordenação</dt>
+                                <dd>
+                                    <p>O administrador pode mudar a ordem com que os Espaços irão aparecer para o usuário do site, apenas mudando a ordenação dos mesmos na listagem. Para isso, o administrador deve clicar nas setas "para cima" ou "para baixo" de acordo como quer que os espaços estejam dispostos.</p>
+                                    <img src="assets/img/ordenacao-espacos-culturais.jpg" alt="Ordenação de espaços" width="1000" height="318">
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a name="aero-agentes-culturais"></a>
+                <dl>
+                    <dt>3 - Agentes Culturais: adição, edição e remoção</dt>
+                    <dd>
+                        <img src="assets/img/menu-agentes-culturais.jpg" alt="Agentes culturais" width="1000" height="318">
+                        <p>Na parte superior da tela, o usuário pode observar um menu. Ao clicar em "Agentes Culturais", o usuário tem acesso a uma listagem de todos agentes cadastrados.</p>
+                        <img src="assets/img/listagem-agentes-culturais.jpg" alt="Listagem de agentes culturais" width="1000" height="318">
+                        <p>Nessa sessão o usuário pode <a href="#a-agentes-culturais">adicionar</a>, <a href="#e-agentes-culturais">editar</a>, <a href="#r-agentes-culturais">remover</a> e <a href="#o-agentes-culturais">ordenar</a> os agentes culturais</p>
+
+                        <section>
+                            <a name="a-agentes-culturais"></a>
+                            <dl>
+                                <dt>3.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar um Agente Cultural, o usuário deve clicar no botão "+ Agente Cultural".</p>
+                                    <img src="assets/img/adicao-agentes-culturais.jpg" alt="Listagem de agentes culturais" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos do agente cultural, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-agentes-culturais.jpg" alt="Adição de agentes culturais" width="1000" height="500">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Nome do responsável</li>
+                                        <li>Slug(criado automaticamente baseado no nome do responsável)</li>
+                                        <li>Natureza Jurídica</li>
+                                        <li>Espaço físico/virtual</li>
+                                        <li>Área de atuação cultural primária</li>
+                                        <li>Áreas de atuações culturais secundárias</li>
+                                        <li>Endereço</li>
+                                        <li>Cep</li>
+                                        <li>Complemento</li>
+                                        <li>Latitude e Longitude (que são definidas automáticamente ao selecionar a localização do espaço no mapa)</li>
+                                        <li>Atividades culturais</li>
+                                        <li>Celular</li>
+                                        <li>Telefone fixo</li>
+                                        <li>Telefone comercial</li>
+                                        <li>Endereço do site</li>
+                                        <li>Email</li>
+                                        <li>URL da agenda cultural</li>
+                                        <li>Twitter</li>
+                                        <li>Facebook</li>
+                                        <li>Google+</li>
+                                        <li>YouTube</li>
+                                        <li>Outras redes sociais</li>
+                                        <li>Horário de funcionamento</li>
+                                        <li>Fechado no horário de almoço (entre 12:00 e 14:00)</li>
+                                        <li>Informações Adicionais</li>
+                                    </ul>
+
+                                    <p>Para adicionar fotos ao agente, o usuário na aba "Fotos" que fica acima do formulário.</p>
+                                    <img src="assets/img/fotos-adicao-agentes-culturais.jpg" alt="Adição de fotos" width="1000" height="500">
+                                    <p>Então o usuário só precisa clicar em "Adicionar" e escolher o arquivo de imagem válido(.jpg, .gif e .png) do seu computador. Não deve ser colocado arquivos com transparência nos formatos .gif e .png.</p>
+                                    <img src="assets/img/adicao-foto-agentes-culturais.jpg" alt="Escolher arquivo de imagem" width="1000" height="316">
+                                    <p>Após o correto preenchimento dos campos e das fotos(opcional), o usuário pode adicionar o agente clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-espacos-culturais.jpg" alt="Formulário de adição de agente cultural" width="1000" height="500">
+                                </dd>
+                            </dl>
+
+                            <a name="e-agentes-culturais"></a>
+                            <dl>
+                                <dt>3.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar um agente cultural, o usuário deve clicar no botão "Editar" correspondente ao agente que deseja alterar.</p>
+                                    <img src="assets/img/edicao-agentes-culturais.jpg" alt="Edição do agente" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-agentes-culturais">adição</a> com os campos já preenchidos. O usuário deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-edicao-espacos-culturais.jpg" alt="Salvar alterações no agente cultural" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="r-agentes-culturais"></a>
+                            <dl>
+                                <dt>3.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o usuário deseja remover um Agente Cultural, ele deve procurar na linha do respectivo agente, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-agentes-culturais.jpg" alt="Remover um agente" width="1000" height="318">
+                                    <p>Caso o usuário queira remover mais de um Agente de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar um ou mais agentes.</p>
+                                    <img src="assets/img/remocoes-agentes-culturais.jpg" alt="Remover mais de um agente" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="o-agentes-culturais"></a>
+                            <dl>
+                                <dt>3.4 - Ordenação</dt>
+                                <dd>
+                                    <p>O administrador pode mudar a ordem com que os Agentes irão aparecer para o usuário do site, apenas mudando a ordenação dos mesmos na listagem. Para isso, o administrador deve clicar nas setas "para cima" ou "para baixo" de acordo como quer que os agentes estejam dispostos.</p>
+                                    <img src="assets/img/ordenacao-agentes-culturais.jpg" alt="Ordenação de agentes" width="1000" height="318">
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a name="aero-atributos"></a>
+                <dl>
+                    <dt>4 - Atributos: adição, edição e remoção</dt>
+                    <dd>
+                        <img src="assets/img/menu-atributos.jpg" alt="Atributos" width="1000" height="318">
+                        <p>Na parte superior da tela, o usuário pode observar um menu. Ao clicar em "Atributos", o usuário tem acesso a uma listagem de todos atributos cadastrados.</p>
+                        <img src="assets/img/listagem-atributos.jpg" alt="Listagem de atributos" width="1000" height="318">
+                        <p>Nessa sessão o usuário pode <a href="#a-atributos">adicionar</a>, <a href="#e-atributos">editar</a>, <a href="#r-atributos">remover</a> e <a href="#o-atributos">ordenar</a> os atributos. Além disso ele pode ir para a listagem dos <a href="#descendentes-atributos">descendentes</a> de cada atributo.</p>
+
+                        <section>
+                            <a name="a-atributos"></a>
+                            <dl>
+                                <dt>4.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar um Atributo, o usuário deve clicar no botão "+ Atributo".</p>
+                                    <img src="assets/img/adicao-atributos.jpg" alt="Listagem de atributos" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos do atributo, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-atributos.jpg" alt="Adição de atributo" width="1000" height="318">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Tipo de seleção</li>
+                                        <li>Nome do atributo</li>
+                                    </ul>
+
+                                    <p>Após o correto preenchimento dos campos, o usuário pode adicionar o atributo clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-atributos.jpg" alt="Formulário de adição de atributo" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="e-atributos"></a>
+                            <dl>
+                                <dt>4.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar um atributo, o usuário deve clicar no botão "Editar" correspondente ao agente que deseja alterar.</p>
+                                    <img src="assets/img/edicao-atributos.jpg" alt="Edição do atributo" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-atributos">adição</a> com os campos já preenchidos. O usuário deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-edicao-atributos.jpg" alt="Salvar alterações no atributo" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="r-atributos"></a>
+                            <dl>
+                                <dt>4.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o usuário deseja remover um Atributo, ele deve procurar na linha do respectivo atributo, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-atributos.jpg" alt="Remover um atibuto" width="1000" height="318">
+                                    <p>Caso o usuário queira remover mais de um Atributo de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar um ou mais atributos.</p>
+                                    <img src="assets/img/remocoes-atributos.jpg" alt="Remover mais de um atibuto" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+
+                            <a name="o-atributos"></a>
+                            <dl>
+                                <dt>4.4 - Ordenação</dt>
+                                <dd>
+                                    <p>O administrador pode mudar a ordem com que os atributos irão aparecer para o usuário do site, apenas mudando a ordenação dos mesmos na listagem. Para isso, o administrador deve clicar nas setas "para cima" ou "para baixo" de acordo como quer que os atributos estejam dispostos.</p>
+                                    <img src="assets/img/ordenacao-atributos.jpg" alt="Ordenação de atributos" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+
+                            <a name="descendentes-atributos"></a>
+                            <dl>
+                                <dt>4.5 - Descendentes</dt>
+                                <dd>
+                                    <p>Para ver os descendentes dos atributos, o usuário deve clicar no botão "Descendentes" do respectivo atributo. Se ele quiser ver os descendentes de um descendente, basta clicar no botão "Descendentes" do mesmo.</p>
+                                    <img src="assets/img/descendentes-atributos.jpg" alt="Ordenação de atributos" width="1000" height="318">
+                                    <p>Obs.: Para adicionar, editar, remover e ordenar os descendentes de algum atributo, basta fazer igual à um atributo normal.</p>
+
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a name="aero-noticias"></a>
+                <dl>
+                    <dt>5 - Notícias: adição, edição, remoção e ordenação</dt>
+                    <dd>
+                        <img src="assets/img/menu-noticias.jpg" alt="Notícias" width="1000" height="318">
+                        <p>Na parte superior da tela, o usuário pode observar um menu. Ao clicar em "Notícias", o usuário tem acesso a uma listagem de todas notícias cadastradas.</p>
+                        <img src="assets/img/listagem-noticias.jpg" alt="Listagem de notícias" width="1000" height="318">
+                        <p>Nessa sessão o usuário pode <a href="#a-noticias">adicionar</a>, <a href="#e-noticias">editar</a>, <a href="#r-noticias">remover</a> e <a href="#o-noticias">ordenar</a> as notícias</p>
+
+                        <section>
+                            <a name="a-noticias"></a>
+                            <dl>
+                                <dt>5.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar uma Notícia, o usuário deve clicar no botão "+ Notícia".</p>
+                                    <img src="assets/img/adicao-noticias.jpg" alt="Listagem de notícias" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos da notícia, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-noticias.jpg" alt="Adição de notícia" width="1000" height="500">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Título</li>
+                                        <li>Conteúdo</li>
+                                        <li>Autor</li>
+                                        <li>Slug(criado automaticamente baseado no título)</li>
+                                        <li>Data</li>
+                                    </ul>
+
+                                    <p>Para adicionar um vídeo ao campo "Conteúdo" de uma notícia, o usuário deve ir no youtube ou vimeo, escolher o vídeo, copiar a URL.</p>
+                                    <p>Em seguida deve voltar ao admin do site, clicar no botão de adição de vídeo, </p>
+                                    <img src="assets/img/noticias-video.jpg" alt="Adição de vídeo" width="1000" height="316">
+                                    <p>colar o código previamente copiado e clicar em "OK".</p>
+                                    <img src="assets/img/noticias-video-inserir.jpg" alt="Adição de vídeo" width="1000" height="316">
+                                    <p>Do mesmo jeito você pode adicionar vídeos em Espaços, Agentes e Eventos.</p>
+
+                                    <p>Já para adicionar fotos à notícia, o usuário deve clicar na aba "Fotos" que fica acima do formulário.</p>
+                                    <img src="assets/img/fotos-adicao-noticias.jpg" alt="Adição de fotos" width="1000" height="500">
+                                    <p>Então o usuário só precisa clicar em "Adicionar" e escolher o arquivo de imagem válido(.jpg, .gif e .png) do seu computador. Não deve ser colocado arquivos com transparência nos formatos .gif e .png.</p>
+                                    <img src="assets/img/adicao-foto-noticias.jpg" alt="Escolher arquivo de imagem" width="1000" height="316">
+                                    <p>Após o correto preenchimento dos campos e das fotos(opcional), o usuário pode adicionar a notícia clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-noticias.jpg" alt="Formulário de adição de notícia" width="1000" height="500">
+                                </dd>
+                            </dl>
+
+                            <a name="e-noticias"></a>
+                            <dl>
+                                <dt>5.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar uma notícia, o usuário deve clicar no botão "Editar" correspondente à notícia que deseja alterar.</p>
+                                    <img src="assets/img/edicao-noticias.jpg" alt="Edição da notícia" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-noticias">adição</a> com os campos já preenchidos. O usuário deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-edicao-noticias.jpg" alt="Salvar alterações na notícia" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="r-noticias"></a>
+                            <dl>
+                                <dt>5.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o usuário deseja remover uma notícia ele deve procurar, na linha da respectiva notícia, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-noticias.jpg" alt="Remover uma notícia" width="1000" height="318">
+                                    <p>Caso o usuário queira remover mais de uma notícia de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar uma ou mais notícias.</p>
+                                    <img src="assets/img/remocoes-noticias.jpg" alt="Remover mais de uma notícia" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <a name="o-noticias"></a>
+                            <dl>
+                                <dt>5.4 - Ordenação</dt>
+                                <dd>
+                                    <p>O administrador pode mudar a ordem com que as notícias irão aparecer para o usuário do site, apenas mudando a ordenação das mesmas na listagem. Para isso, o administrador deve clicar nas setas "para cima" ou "para baixo" de acordo como quer que as notícias estejam dispostas.</p>
+                                    <img src="assets/img/ordenacao-noticias.jpg" alt="Ordenação de notícias" width="1000" height="318">
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a href="" name="aer-usuarios"></a>
+                <dl>
+                    <dt>6 - Usuários: adição, edição e remoção</dt>
+                    <dd>
+                        <img src="assets/img/menu-usuarios.jpg" alt="Usuários" width="1000" height="318">
+                        <p>Na parte superior da tela, o administrador pode observar um menu. Ao clicar em "Usuários", o administrador tem acesso a uma listagem de todos usuários cadastrados.</p>
+                        <img src="assets/img/listagem-usuarios.jpg" alt="Listagem de usuários" width="1000" height="318">
+                        <p>Nessa sessão o administrador pode <a href="#a-usuarios">adicionar</a>, <a href="#e-usuarios">editar</a>, <a href="#r-usuarios">remover</a> e <a href="#o-usuarios">ordenar</a> os usuários.</p>
+
+                        <section>
+                            <dl>
+                                <a name="a-usuarios"></a>
+                                <dt>6.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar um Usuário, o administrador deve clicar no botão "+ Usuário".</p>
+                                    <img src="assets/img/adicao-usuarios.jpg" alt="Listagem de usuários" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos do usuário, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-usuarios.jpg" alt="Adição de usuário" width="1000" height="318">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Ativo</li>
+                                        <li>Nome</li>
+                                        <li>Email</li>
+                                        <li>Senha</li>
+                                        <li>Comfirmação de senha</li>
+                                        <li>Nível do Usuário</li>
+                                    </ul>
+
+
+                                    <p>Após o correto preenchimento dos campos, o administrador pode adicionar o usuário clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-usuarios.jpg" alt="Formulário de adição de usuário" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="e-usuarios"></a>
+                                <dt>6.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar um usuário, o administrador deve clicar no botão "Editar" correspondente ao usuário que deseja alterar.</p>
+                                    <img src="assets/img/edicao-usuarios.jpg" alt="Edição do usuário" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-usuarios">adição</a> com os campos já preenchidos. O administrador deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-usuarios.jpg" alt="Salvar alterações no usuário" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="r-usuarios"></a>
+                                <dt>6.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o administrador deseja remover um usuário ele deve procurar, na linha do respectivo usuário, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-usuarios.jpg" alt="Remover um usuário" width="1000" height="318">
+                                    <p>Caso o administrador queira remover mais de um usuário de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar um ou mais usuários.</p>
+                                    <img src="assets/img/remocoes-usuarios.jpg" alt="Remover mais de um usuário" width="1000" height="318">
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a name="aer-eventos"></a>
+                <dl>
+                    <dt>7 - Eventos: adição, edição e remoção</dt>
+                    <dd>
+                        <img src="assets/img/menu-eventos.jpg" alt="Eventos" width="1000" height="318">
+                        <p>Ao <a href="#e-espacos-culturais">editar</a> um espaço cultural, o usuário clica em "Eventos"(na parte superior direita da tela) e tem acesso a uma listagem de todos eventos cadastrados para aquele espaço.</p>
+                        <img src="assets/img/listagem-eventos.jpg" alt="Listagem de eventos" width="1000" height="318">
+                        <p>Nessa sessão o usuário pode <a href="#a-eventos">adicionar</a>, <a href="#e-eventos">editar</a> e <a href="#r-eventos">remover</a> os eventos.</p>
+
+                        <section>
+                            <dl>
+                                <a name="a-eventos"></a>
+                                <dt>7.1 - Adição</dt>
+                                <dd>
+                                    <p>Para adicionar um evento, o usuário deve clicar no botão "+ Evento".</p>
+                                    <img src="assets/img/adicao-eventos.jpg" alt="Listagem de eventos" width="1000" height="318">
+                                    <p>Ao clicar nessa opção, um formulário com os campos do evento, à serem preenchidos, é mostrado na tela.</p>
+                                    <img src="assets/img/formulario-adicao-eventos.jpg" alt="Adição de evento" width="1000" height="318">
+                                    <br/><br/>
+
+                                    <ul>
+                                        <strong>Os campos são:</strong>
+                                        <li>Título</li>
+                                        <li>Slug(criado automaticamente baseado no título)</li>
+                                        <li>Data</li>
+                                        <li>Horário</li>
+                                        <li>Descrição</li>
+                                        <li>Informações de valores</li>
+                                        <li>Informações de datas</li>
+                                        <li>Informações de horários</li>
+                                        <li>Imagem de capa</li>
+                                        <li>Agentes Culturais envolvidos</li>
+                                    </ul>
+
+                                    <p>Para adicionar fotos ao evento, o usuário deve clicar na aba "Fotos" que fica acima do formulário.</p>
+                                    <img src="assets/img/fotos-adicao-eventos.jpg" alt="Adição de fotos" width="1000" height="318">
+                                    <p>Então o usuário só precisa clicar em "Adicionar" e escolher o arquivo de imagem válido(.jpg, .gif e .png) do seu computador. Não deve ser colocado arquivos com transparência nos formatos .gif e .png.</p>
+                                    <img src="assets/img/adicao-foto-eventos.jpg" alt="Escolher arquivo de imagem" width="1000" height="316">
+                                    <p>Após o correto preenchimento dos campos e das fotos(opcional), o usuário pode adicionar o evento clicando em "Salvar" ou "Cancelar" caso desista do processo.</p>
+                                    <img src="assets/img/salvar-adicao-eventos.jpg" alt="Formulário de adição de evento" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="e-eventos"></a>
+                                <dt>7.2 - Edição</dt>
+                                <dd>
+                                    <p>Para editar um evento, o usuário deve clicar no botão "Editar" correspondente ao evento que deseja alterar.</p>
+                                    <img src="assets/img/edicao-eventos.jpg" alt="Edição do evento" width="1000" height="318">
+                                    <p>Logo em seguida, é mostrado na tela um formulário igual ao de <a href="#a-eventos">adição</a> com os campos já preenchidos. O usuário deve escolher o campo que quer alterar e em seguida clicar no botão "Salvar" logo abaixo do formulário.</p>
+                                    <img src="assets/img/salvar-eventos.jpg" alt="Salvar alterações no evento" width="1000" height="318">
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a name="r-eventos"></a>
+                                <dt>7.3 - Remoção</dt>
+                                <dd>
+                                    <p>Se o usuário deseja remover um evento ele deve procurar, na linha do respectivo evento, o botão "Remover".</p>
+                                    <img src="assets/img/remocao-eventos.jpg" alt="Remover um evento" width="1000" height="318">
+                                    <p>Caso o usuário queira remover mais de um evento de uma vez, ele deve clicar na opção "Remover todos" que aparece ao selecionar um ou mais eventos.</p>
+                                    <img src="assets/img/remocoes-eventos.jpg" alt="Remover mais de um evento" width="1000" height="318">
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+
+                <a href="" name="niveis-usuario"></a>
+                <dl>
+                    <dt>8 - Níveis de usuário</dt>
+                    <dd>
+                        <section>
+                            <dl>
+                                <a href="" name="usuario-nivel-0"></a>
+                                <dt>Nível 0 - Usuário do site</dt>
+                                <dd>
+                                    <p>Gerencia o seu próprio perfil e adiciona eventos à sua agenda. Não pode se logar no admin.</p>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a href="" name="usuario-nivel-1"></a>
+                                <dt>Nível 1 - Colaborador</dt>
+                                <dd>
+                                    <p>Criar e ver todos os espaços culturais,agentes e notícias.</p>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <a href="" name="usuario-nivel-2"></a>
+                                <dt>Nível 2 - Administrador</dt>
+                                <dd>
+                                    <p>Pode criar e ver e editar todos os espaços culturais, agentes, eventos, usuários, atributos, notícias. Pode, ainda, criar e alterar as permissões.</p>
+                                </dd>
+                            </dl>
+                        </section>
+                    </dd>
+                </dl>
+            </section>
+
+        </main>
+
+        <footer class="footer" role="contentinfo">
+
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="/assets/js/scripts.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

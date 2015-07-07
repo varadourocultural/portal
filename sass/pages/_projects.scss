@@ -1,0 +1,75 @@
+.projects-heading {
+    text-align: center;
+    margin-bottom: u(47);
+
+    h1 {
+        color: $color-orange;
+        font-family: $font-family-bebas;
+        font-weight: normal;
+        font-size: u(119);
+        margin: u(30 0 0);
+        line-height: u(112);
+        text-transform: uppercase;
+    }
+
+    a {
+        color: $color-white;
+        margin: u(0 20);
+        text-transform: uppercase;
+        font-family: $font-family-gotham-bold;
+        font-size: u(12);
+        font-weight: normal;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+}
+
+.projects-container {
+    .swiper-container {
+        margin-bottom: u(30);
+    }
+}
+
+    .project-single {
+        background: $color-white;
+        margin-bottom: u(25);
+        padding-bottom: u(20);
+
+
+        header {
+            @include clearfix;
+            height: u(135);
+            background: $color-blue-gray;
+            padding: u(0 0 0 42);
+            margin-bottom: u(34);
+
+            img {
+                float: right;
+            }
+        }
+
+            h2 {
+                margin: 0;
+                text-transform: uppercase;
+                color: $color-white;
+                font-size: u(82);
+                font-family: $font-family-bebas;
+                font-weight: normal;
+                padding-top: u(40);
+                line-height: u(82);
+                float: left;
+                letter-spacing: -1px;
+            }
+
+            h1, h3, h4, h5, h6 {
+                margin: u(0 0 17 0);
+                font-family: $font-family-bebas;
+                font-size: u(24);
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+
+        .row {
+            padding: u(0 25);
+        }
+    }

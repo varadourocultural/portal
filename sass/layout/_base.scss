@@ -1,0 +1,34 @@
+@import 'compass';
+
+@import 'helpers/functions';
+
+$font-size: 16;
+
+//Grid
+$grid-width: 1056;
+$grid-columns: 12;
+
+//Colors
+$color-blue-gray: #87a2a4;
+$color-white: #f2f2f7;
+$color-gray-dark: #323232;
+$color-gray-light: #8c8c8c;
+$color-gray-lighter: #d9d9d9;
+$color-yellow-dark: #a9933b;
+$color-red: #d75d5b;
+$color-orange: #f2a432;
+$color-black: #121212;
+
+//Typography
+$font-family-fallback: Helvetica, Arial, sans-serif;
+$font-family-gotham-bold: #{'Gotham-Bold', $font-family-fallback};
+$font-family-gotham-book: #{'Gotham-Book', $font-family-fallback};
+$font-family-gotham-medium: #{'Gotham-Medium', $font-family-fallback};
+$font-family-bebas: #{'BebasNeue', $font-family-fallback};
+
+
+// Sprite mappers
+$sprite: sprite-map("sprite/standard/*.png", $layout: "smart");
+
+@import 'grid';
+@import 'typography';
