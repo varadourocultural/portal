@@ -3348,7 +3348,7 @@ var infowindow = null;
                                         position: markerLatLng,
                                         map: map,
                                         title: ajaxData.espacos[i].nome_espaco,
-                                        icon: 'http://dev.varadourocultural.org/publico/sigla?t=' + ajaxData.espacos[i].sigla
+                                        icon: 'http://varadourocultural.org/publico/sigla?t=' + ajaxData.espacos[i].sigla
                                     });
 
                                     if (ajaxData.espacos[i].foto != 0) {
@@ -3399,7 +3399,7 @@ var infowindow = null;
                                         position: markerLatLng,
                                         map: map,
                                         title: ajaxData.agentes[i].nome_responsavel,
-                                        icon: 'http://dev.varadourocultural.org/publico/sigla?t=' + ajaxData.agentes[i].sigla
+                                        icon: 'http://varadourocultural.org/publico/sigla?t=' + ajaxData.agentes[i].sigla
                                     });
 
                                     if (ajaxData.agentes[i].foto != 0) {
